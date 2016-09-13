@@ -81,17 +81,19 @@ table {
     And yes, there is a lot of repetition there because of -prefixes but we don't
     want to leave anybody behind.
 */
+
 body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
+
+    background: rgb(255, 255, 255);
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(255,255,255)), to(rgb(255,255,255)));
+    background: -webkit-radial-gradient(rgb(255,255,255), rgb(255,255,255));
+    background:    -moz-radial-gradient(rgb(255,255,255), rgb(255,255,255));
+    background:     -ms-radial-gradient(rgb(255,255,255), rgb(255,255,255));
+    background:      -o-radial-gradient(rgb(255,255,255), rgb(255,255,255));
+    background:         radial-gradient(rgb(255,255,255), rgb(255,255,255));
 }
 
 /*
@@ -103,6 +105,13 @@ i, em { font-style: italic }
 /*
     ... and give links a nice look.
 */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -175,7 +184,7 @@ a:focus {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
+    font-family: 'Calibri', georgia, serif;
     font-size: 48px;
     line-height: 1.5;
 }
@@ -268,7 +277,12 @@ a:focus {
 }
 
 #title h1 {
-    font-size: 190px;
+    font-size: 48px;
+    position: relative;
+    text-align: center;
+    line-height: 72px;
+    color: rgb(27,53,113);
+    font-weight: bold;
 
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
