@@ -7,5 +7,3 @@ This is the project for the TA Workshop Kickoff Presentation written using impre
 * The css file I took straight from the Impress.js demo..and started tweaking it a bit.  I suggest we start with this and tweak as necessary
 * I created on outline.txt file for us to use for the outline of what goes where
 * Img folder for all images please
-
-
