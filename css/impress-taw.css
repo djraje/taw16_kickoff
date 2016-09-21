@@ -208,6 +208,9 @@ img {
     margin-right: auto
 }
 
+#cover acn-tech {
+    margin: 0px 0px;
+}
 
 }
 a {
@@ -272,9 +275,10 @@ a:focus {
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: 'Calibri', georgia, serif;
+    font-family: 'Helvetica', georgia, serif;
     font-size: 48px;
     line-height: 1.5;
+    color: #4e2a84;
 }
 
 /*
@@ -284,7 +288,7 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0.06;
     -webkit-transition: opacity 1s;
     -moz-transition: opacity 1s;
     -ms-transition: opacity 1s;
@@ -340,7 +344,7 @@ a:focus {
     3D positioning along Z axis.
 */
 #title {
-    padding: 20;
+    padding: 120;
 }
 #title .try {
     font-size: 64px;
@@ -353,9 +357,15 @@ a:focus {
     -o-transform: translateZ(20px);
     transform: translateZ(20px);
 }
-#title h1 {
-    font-size: 48px;
-    position: relative;
+#title .footnote {
+    font-size: 32px;
+}
+
+#title .covertitle {
+    font-size: 40px;
+    position: absolute;
+    top: 5.2em; 
+    right: 4.4em;
     text-align: center;
     line-height: 72px;
     color: rgb(27, 53, 113);
@@ -364,12 +374,13 @@ a:focus {
     -moz-transform: translateZ(50px);
     -ms-transform: translateZ(50px);
     -o-transform: translateZ(50px);
-    transform: translateZ(50px);
+    transform: translateZ(50px);  
 }
-#title .footnote {
-    font-size: 32px;
+#title .coverurl {
+    position: absolute;
+    top: 27.5em;
+    right: 19.5em;
 }
-
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
     any special styling.
@@ -377,7 +388,7 @@ a:focus {
     Let's move to 'big thoughts' with centered text and custom font sizes.
 */
 #big {
-    width: 600px;
+    width: 700px;
     text-align: center;
     font-size: 60px;
     line-height: 1;
@@ -403,7 +414,7 @@ a:focus {
 /*
     This step has some animated text ...
 */
-#ing {
+travel-step-5#ing {
     width: 500px
 }
 
@@ -602,7 +613,7 @@ a:focus {
     `impress-on-` class.
 */
 .impress-on-overview .step {
-    opacity: 1;
+    opacity: 0.5;
     cursor: pointer;
 }
 
@@ -766,6 +777,46 @@ a:focus {
     pointer-events: auto
 }
 
+#handson .get {
+    position: absolute;
+    top: -300px;
+    display: block;
+    font-size: 120px;
+    line-height: 120px;
+    
+}
+#self-directed li {
+    position: absolute;
+    top: -70px;
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    
+}
+#community li {
+    position: absolute;
+    top: 00px;
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    
+}
+#handsonsub li {
+    position: absolute;
+    top: 70px;
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    
+}
+#training li {
+    position: absolute;
+    top: 140px;
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    
+}
 /*
     There is one funny thing I just realized.
 
@@ -782,3 +833,84 @@ a:focus {
     Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
     for you.
 */
+/*
+    ... and we want 'positioning` word to move up a bit when the step gets
+    `present` class ...
+*/
+#travel-step-4 b {
+    display: block;
+    font-size: 180px;
+    line-height: 180px;
+}
+
+/*
+    ... and we want 'positioning` word to move up a bit when the step gets
+    `present` class ...
+*/
+#travel-step-4 .feasibility {
+    position: absolute;
+    right: 400px;
+    top: -100px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    -o-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+/*
+    ... 'rotating' to rotate a quarter of a second later ...
+*/
+#travel-step-4 .creativity {
+    position: absolute;
+    right: 100px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    -webkit-transition-delay: 0.25s;
+    -moz-transition-delay: 0.25s;
+    -ms-transition-delay: 0.25s;
+    -o-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+}
+
+/*
+    ... and 'scaling' to scale down after another quarter of a second.
+*/
+#travel-step-4 .sellability {
+    position: absolute;
+    right: -400px;
+    top: 150px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#travel-step-5 .big {
+    position: absolute;
+    left: -250px;
+    top: -0px;
+    display: block;
+    font-size: 70px;
+    line-height: 70px;
+    
+}
+
+#attendance img {
+    position: absolute;
+    top: 260px;
+}
