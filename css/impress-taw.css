@@ -949,7 +949,10 @@ travel-step-5#ing {
 }
 
 #audience p {
-    font-size: 170px;
+    position: absolute;
+    left: -180px;
+    top: -0px;
+    font-size: 80px;
 }
 
 #travel-innovation-opener p {
